@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Animado Responsive - Practica 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Poppins:wght@300;500;800&family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><img src="img/logo luis.jpeg" alt="logo Luis Pico"></a>
+
+        <ul class="navbar">
+            <li><a href="#home" class="active">Inicio</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#portfolio">Portafolio</a></li>
+            <li><a href="#service">Servicios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+
+        <div class="menu-btn">
+            <span>INTRO</span>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <span>Desarrollador Web</span>
+            <h1>Luis Pico</h1>
+            <p>Soy un diseñador, ilustrador y creador de cursos, 
+            plantillas, kits de esquemas y el ocasionalmente útil 
+            proyecto paralelo</p>
+            <div class="main-btn">
+                <a download="CV Luis Pico" href="document/CV Luis Pico.pdf" target="_blank" class="btn">Descargar CV</a>
+                <a href="mailto:luis.pico21@gmail.com"target="_blank" class="btn two">Contratame ahora</a>    
+            </div>
+        </div>
+
+        <figure class="home-img">
+            <img src="img/Imagen Personal Luis Pico.jpeg" alt="imagen de referencia">
+        </figure>
+    </section>
+
+    <div class="share">
+        <p>Chequea mis:</p>
+        
+        <div class="social">
+            <a href="https://github.com/LuisEpicoS/mi-nuevo-proyecto.git"target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://twitter.com/LuisPico21"target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.linkedin.com/"target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.skype.com/es/"target="_blank"><i class='bx bxl-skype' ></i></a>
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/about.jpg" alt="sobre mi">
+        </div>
+        <div class="about-text">
+            <h3>Sobre mi persona</h3>
+            <h2>Emprendedor por excelencia</h2>
+            <p>¡Hola! Soy <strong>Luis Pico</strong> – Ejecutivo en ventas y estudiante de Eidos Global Group. 
+                <br>Emprendedor, proactivo, entrenado para buscar siempre facultad para el desarrollo personal y 
+                laboral con ansias de seguir aprendiendo con el fin de ejecutar parar el bienestar colectivo. 
+                Tengo el súper poder de cuando aprendo algo me vuelvo el mejor instructor, no solo soy un buen 
+                alumno sino volverme bueno en lo que me gusta para poder enseñar lo aprendido. <br>Soy un apasionado 
+                por  el deporte, espacios abiertos naturales y por la buena salud, por lo que mi rutina se basa 
+                en hábitos que también me ayudan a mantenerme enfocado y dedicado. </p>
+                <a href="mailto:luis.pico21@gmail.com"target="_blank" class="btn three">Contratame</a>
+        </div>
+    </section>
+
+    <!-- No poseo un portafolio como tal, así que esta section es solo un "adorno" -->
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h3>Portafolio</h3>
+            <h2>Mi Increíble Trabajo</h2>
+            <p>Los métodos más comunes para diseñar sitios web que funcionen bien en ordenadores de sobremesa 
+            <br>son el diseño adaptativo y el diseño con capacidad de respuesta.</p>
+        </div>
+
+        <div class="portfolio-content">
+            <div class="col">
+                <img src="img/trabajo1.jpg" alt="1er trabajo">
+                <div class="layer">
+                    <h3>Diseño Web</h3>
+                    <h5>Map web</h5>
+                </div>
+            </div>
+            <div class="col">
+                <img src="img/trabajo2.jpg" alt="2do trabajo">
+                <div class="layer">
+                    <h3>Diseño Web</h3>
+                    <h5>Abstract web</h5>
+                </div>
+            </div>
+            <div class="col">
+                <img src="img/trabajo3.jpg" alt="3er trabajo">
+                <div class="layer">
+                    <h3>Diseño Web</h3>
+                    <h5>Lineal web</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLantilla de Servicio (solo una idea luego será mejorado) -->
+    <section class="service" id="service">
+        <div class="heading">
+            <h3>Servicio</h3>
+            <h2>Que puedo hacer por los Clientes</h2>
+            <p>El uso de lenguajes de programación, herramientas de diseño, bases de datos y otras tecnologías 
+            para desarrollar la parte visual y funcional de los proyectos web.</p>
+        </div>
+
+        <div class="service-content">
+            <div class="row">
+                <div class="s s-one">
+                    <img src="img/usb2.png" alt="ancla">
+                </div>
+                <h3>Diseño Web</h3>
+                <h5>Comienza a partir de <span>$99</span></h5>
+                <p>Planificar y diseñar la apariencia y la estructura de un sitio web, teniendo en cuenta aspectos 
+                como la usabilidad, la estética y la adaptabilidad a diferentes dispositivos.</p>
+            </div>
+            <div class="row">
+                <div class="s s-two">
+                    <img src="img/physics.png" alt="atomo">
+                </div>
+                <h3>Desarrollo Front-End</h3>
+                <h5>Comienza a partir de <span>$99</span></h5>
+                <p>Programar la parte visible de un sitio web, utilizando lenguajes como HTML, CSS y JavaScript, 
+                y frameworks o librerías que facilitan el trabajo, como Bootstrap, React o Angular.</p>
+            </div>
+            <div class="row">
+                <div class="s s-three">
+                    <img src="img/contact.png" alt="contacto">
+                </div>
+                <h3>Desarrollo Back-End</h3>
+                <h5>Comienza a partir de <span>$99</span></h5>
+                <p>Programar la parte lógica y funcional de un sitio web, utilizando lenguajes como PHP, Python o 
+                Java, y bases de datos como MySQL o MongoDB. El desarrollo back-end se encarga de gestionar la información, 
+                la seguridad y la comunicación entre el servidor y el cliente.</p>
+            </div>
+            <div class="row">
+                <div class="s s-four">
+                    <img src="img/web2.png" alt="web">
+                </div>
+                <h3>Mantenimiento web</h3>
+                <h5>Comienza a partir de <span>$99</span></h5>
+                <p>Actualizar y mejorar el rendimiento de un sitio web, corrigiendo errores, añadiendo nuevas funcionalidades, 
+                optimizando el código y asegurando la compatibilidad con los estándares web y los navegadores más usados.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="center">
+                <h3>Hablemos!</h3>
+                <p>Tienes algo que decir... enviáme un E-mail</p>
+                
+                <div class="action">
+                    <form>
+                        <input type="email" name="email" placeholder="introduce tu E-mail" required>
+                        <input type="submit" name="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="ends">
+        <p>Hecho por Luis Pico en colaboración con Eidos Global Group © 2023</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
