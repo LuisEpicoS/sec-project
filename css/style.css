@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300;500;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Source Serif 4', serif;
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
@@ -82,12 +84,12 @@ header.sticky {
 }
 #menu-icon {
     font-size: 28px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     z-index: 6;
 }
 
 section {
-    padding: 0 15%;
+    padding: 0 15%;   
 }
 .home {
     position: relative;
@@ -153,7 +155,7 @@ section {
     background: #141414;
     border: 2px solid #141414;
     color: var(--text-color);
-    margin-left: 25px;
+    margin-left: 15px;
 }
 .two:hover {
     color: #141414;
@@ -202,7 +204,7 @@ section {
 }
 .about-img img{
     max-width: 100%;
-    width: 460px;
+    /* width: 460px; */
     height: auto;
     border-radius: 50px 20px 50px 20px;
 }
@@ -482,11 +484,21 @@ section {
     .home{
         height: auto;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         flex-wrap: wrap;
     }
     .home-text{
         order: 2;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
+
+    .home-text h1 {
+        text-align: center;
+    }
+
     .home-img{
         margin: auto;
         height: auto;
@@ -535,6 +547,7 @@ section {
     }
     .about {
         grid-template-columns: 1fr;
+        padding: 20px;
     }
     .about-img {
         text-align: center;
@@ -547,6 +560,19 @@ section {
     .contact .action form input[type="email"] {
         width: 300px;
     }
+    .portfolio{
+        padding: 20px;
+    }
+    .portfolio-content {
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    }
+    .service{
+        padding: 20px;
+    }
+
+    .service-content {
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    }
 }
 
 @media (max-width: 360px) {
@@ -556,7 +582,7 @@ section {
         transition: .2s;
     }
     .btn{
-        padding: 8px 16px;
+        padding: 8px 10px;
     }
     .contact .action form input[type="email"] {
         width: 270px;
@@ -569,10 +595,13 @@ section {
         padding: 2px 8px;
         left: 1%;
         transition: .2s;
+        display: flex;
+        justify-content: center;
     }
     .share p {
         display: none;
     }
+
 }
 
 .home-img img{
