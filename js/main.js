@@ -37,3 +37,13 @@ sr.reveal('.main-btn',{delay:800, origin: 'left'});
 sr.reveal('.share',{delay:910, origin: 'botton'});
 
 sr.reveal('.home-img',{delay:990, origin: 'right'});
+
+const menuItems = document.querySelectorAll('menu-item');
+
+menuItems.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+        const currentItem = document.querySelector('.active');
+        currentItem.classList.remove('active');
+        e.target.classList.add('active');
+    });
+});
